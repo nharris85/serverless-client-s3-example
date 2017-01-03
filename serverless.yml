@@ -11,5 +11,5 @@ plugins:
 
 custom:
   client:
-    bucketName: test.serverless.${self:provider.stage}.${self:provider.region}
+    bucketName: test.serverless.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}
 
