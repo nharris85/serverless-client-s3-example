@@ -13,11 +13,11 @@ $ npm install
 Deploy
 ------
 **Using stage and region defined in serverless.yml**
-``bash
+```bash
 $ sls client deploy
 ```
 
 **Using options to overwrite stage and region**
-``bash
+```bash
 $ sls client deploy --stage production --region us-west-2
 ```
