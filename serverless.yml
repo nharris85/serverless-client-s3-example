@@ -1,0 +1,15 @@
+service: test-service 
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  stage: dev
+  region: us-east-1
+
+plugins:
+  - serverless-client-s3
+
+custom:
+  client:
+    bucketName: test.serverless.${self:provider.stage}.${self:provider.region}
+
